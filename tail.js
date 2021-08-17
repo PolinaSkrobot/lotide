@@ -8,12 +8,12 @@ const assertEqual = function(actual, expected) {
     for (let i = 0; i < actual.length; i++) {
       if (actual[i] !== expected[i]) {
         same = false;
-        console.log(`${emo1}${emo1}${emo1} Assertion Failed: ${actual} !== ${expected}`);
+        console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
         break;
       }
     }
     if (same) {
-      console.log(`${emo2}${emo2}${emo2} Assertion Passed: ${actual} === ${expected}`);
+      console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
     }
   }
 };
