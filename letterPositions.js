@@ -15,9 +15,14 @@ const letterPositions = function(sentence) {
 };
 const eqArrays = function(arr1,arr2) {
   let equal = true;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      equal = false;
+  if (arr1.length !== arr2.length) {
+    equal = false;
+  } else {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
+        equal = false;
+        break;
+      }
     }
   }
   return equal;
