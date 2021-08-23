@@ -1,17 +1,3 @@
-// const assertArraysEqual = function(arr1,arr2) {
-//   if (arr1.length !== arr2.length) {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-//     return;
-//   }
-//   for (let i = 0; i < arr1.length; i++) {
-//     if (arr1[i] !== arr2[i]) {
-//       console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-//       return;
-//     }
-//   }
-//   console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-//   return;
-// };
 const emo1 = String.fromCodePoint(0x1F6D1);
 const emo2 = String.fromCodePoint(0x2705);
 const eqArrays = function(arr1,arr2) {
