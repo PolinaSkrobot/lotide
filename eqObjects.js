@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-  const emo1 = String.fromCodePoint(0x1F6D1);
-  const emo2 = String.fromCodePoint(0x2705);
-  if (actual === expected) {
-    console.log(`${emo2}${emo2}${emo2} Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`${emo1}${emo1}${emo1} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+
 const eqArrays = function(arr1,arr2) {
   let equal = true;
   if (arr1.length !== arr2.length) {
@@ -46,12 +38,5 @@ const eqObjects = function(object1, object2) {
 };
 
 
-const ab = { a: "1", b: "2" };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true); // => true
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2)); // => false
-assertEqual(eqObjects(ab, cd2));
+module.exports = eqObjects;
